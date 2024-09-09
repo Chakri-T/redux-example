@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   name: "",
-  accountNumber: 100000000000,
+  accountNumber: [],
 };
 
 const formSlice = createSlice({

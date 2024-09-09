@@ -44,8 +44,6 @@ const Form = () => {
             name="Account"
             value={localAccountNumber}
             onChange={handleAccountNumberChange}
-            min="100000000000"
-            max="999999999999"
             required
             placeholder="Enter Your Account Number"
           ></input>
