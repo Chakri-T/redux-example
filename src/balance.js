@@ -1,5 +1,5 @@
 import React from "react";
-import { withdraw, deposit } from "./slice";
+import { withdraw, deposit } from "./slices/balanceSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 function BalanceComponent() {

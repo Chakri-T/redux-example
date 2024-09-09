@@ -3,7 +3,7 @@ const initialState = {
   availbal: 10000,
 };
 
-const accountSlice = createSlice({
+const balanceSlice = createSlice({
   name: "balance",
   initialState,
   reducers: {
@@ -15,5 +15,5 @@ const accountSlice = createSlice({
     },
   },
 });
-export const { withdraw, deposit } = accountSlice.actions;
-export default accountSlice.reducer;
+export const { withdraw, deposit } = balanceSlice.actions;
+export default balanceSlice.reducer;

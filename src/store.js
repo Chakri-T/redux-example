@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import accountSlice from "./slice";
+import balanceReducer from "./slices/balanceSlice";
+import formReducer from "./slices/formSlice";
 const store = configureStore({
   reducer: {
-    balance: accountSlice,
+    balance: balanceReducer,
+    form: formReducer,
   },
 });
 
