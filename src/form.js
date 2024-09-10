@@ -23,36 +23,44 @@ const Form = () => {
     // setLocalAccountNumber();
   };
   return (
-    <div>
+    <div className="form-component">
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
+        <label className="h3 form-label">
+          Name:{"  "}
           <input
             type="text"
             name="name"
+            className="form-control mt-3"
             value={localName}
             onChange={handleNameChange}
             required
             placeholder="Enter Your Name"
           ></input>
         </label>
-        <label>
-          Account number:
+        <br />
+        <br />
+        <label className="h3 form-label">
+          Account number:{"  "}
           <input
-            className="acnt"
             type="number"
             name="Account"
+            className="form-control mt-3 "
             value={localAccountNumber}
             onChange={handleAccountNumberChange}
             required
             placeholder="Enter Your Account Number"
           ></input>
         </label>
-        <button>Submit</button>
+        {"  "}
+        <button className="btn btn-primary">Submit</button>
       </form>
-      <div>
-        <h2>Name: {name}</h2>
-        <h2>Account Number:{accountNumber}</h2>
+      <div className="details">
+        <h2>
+          Name: <span className="text-muted">{name}</span>
+        </h2>
+        <h2>
+          Account Number:<span className="text-muted">{accountNumber}</span>
+        </h2>
       </div>
     </div>
   );

@@ -1,3 +1,17 @@
-.acnt {
-  width: 180px;
+.h1 {
+  width: fit-content;
+}
+.wbtn {
+  margin-right: 10%;
+}
+form {
+  float: left;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  float: right;
 }
