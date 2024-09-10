@@ -1,7 +1,7 @@
 import React from "react";
-import BalanceComponent from "./balance";
-import History from "./history";
-import Form from "./form";
+import BalanceComponent from "./components/balance";
+import History from "./components/history";
+import Form from "./components/form";
 import "./styles/styles.scss";
 function App() {
   return (

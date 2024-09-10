@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setName, setAccountNumber } from "./slices/formSlice";
+import { setName, setAccountNumber } from "../slices/formSlice";
 
 const Form = () => {
   const name = useSelector((state) => state.form.name);
